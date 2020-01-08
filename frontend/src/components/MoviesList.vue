@@ -10,7 +10,7 @@
           </div>
         </div>
       </div>
-      <p v-else class="text-center text-muted">No results found.</p>
+      <p v-else-if="!$parent.isLoading" class="text-center text-muted">No results found.</p>
     </div>
     <div class="modal fade" id="movieDetails" tabindex="-1" role="dialog" aria-labelledby="movieDetailsLabel" aria-hidden="true">
       <div class="modal-dialog modal-xl" role="document">
